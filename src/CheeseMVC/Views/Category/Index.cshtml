@@ -1,11 +1,16 @@
 ﻿@model List<CheeseMVC.Models.CheeseCategory>
 
-<h1>@ViewBag.Title</h1>
+<h1>Categories</h1>
 
 <ul>
-    @foreach(var category in Model)
+    @foreach (var category in Model)
     {
         <li>@category.Name</li>
+
+        //Is this supposed to link to something?
+        //<a asp-controller="Category"
+        //   asp-action="ViewCategory"
+        //   asp-route-id="@category.ID">@category.Name</a>
     }
 </ul>
 
